@@ -8,24 +8,24 @@ class ApplicationController < Sinatra::Base
   
 # get method for car
   get '/cars' do
-    {cars = Car.all
-    cars}.to_json
+    cars = Car.all
+    cars.to_json
   end
 
   get '/cars/:id' do
-    {cars = Car.find(params[:id])
-    cars}.to_json
+    cars = Car.find(params[:id])
+    cars.to_json
   end
 
 # get method for client
   get '/clients' do
-    {clients = Client.all
-    clients}.to_json
+    clients = Client.all
+    clients.to_json
   end
 
   get '/clients/:id' do
-    {clients = Client.find(params[:id])
-    clients}.to_json
+    clients = Client.find(params[:id])
+    clients.to_json
   end
 
 # get method for lease
