@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_08_083423) do
+ActiveRecord::Schema.define(version: 2022_09_08_130155) do
 
   create_table "cars", force: :cascade do |t|
     t.string "model"
     t.integer "daily_rate"
     t.integer "weekly_rate"
+    t.string "image_url"
   end
 
   create_table "clients", force: :cascade do |t|

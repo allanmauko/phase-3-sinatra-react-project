@@ -2,13 +2,13 @@ puts "🌱 Seeding spices..."
 
 # Seed your database here
 # Car database
-Car.create(model: "Toyota TX", daily_rate: 10000, weekly_rate: 60000)
-Car.create(model: "Toyota ZX", daily_rate: 10000, weekly_rate: 60000)
-Car.create(model: "Toyota VX", daily_rate: 10000, weekly_rate: 60000)
-Car.create(model: "Toyota VX", daily_rate: 10000, weekly_rate: 60000)
-Car.create(model: "Toyota Allion", daily_rate: 5000, weekly_rate: 30000)
-Car.create(model: "Toyota Premio", daily_rate: 5000, weekly_rate: 30000)
-Car.create(model: "Toyota Vitz", daily_rate: 5000, weekly_rate: 30000)
+Car.create(model: "Toyota TX", daily_rate: 10000, weekly_rate: 60000, image_url: "https://media.toyota-gib.com/web-imgs/models/land-cruiser-prado/lj150-gkmee/web/lj150-gkmee-C1.jpg")
+Car.create(model: "Toyota ZX", daily_rate: 10000, weekly_rate: 60000, image_url: "https://static.pakwheels.com/2018/09/featured2.jpg")
+Car.create(model: "Toyota VX", daily_rate: 10000, weekly_rate: 60000, image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/2017_Toyota_Land_Cruiser_200_V8_VX_Limited_Edition.jpg/2560px-2017_Toyota_Land_Cruiser_200_V8_VX_Limited_Edition.jpg")
+Car.create(model: "Toyota VX", daily_rate: 10000, weekly_rate: 60000, image_url: "https://www.ccarprice.com/products/Toyota_LandCruiser_2022_1.jpg")
+Car.create(model: "Toyota Allion", daily_rate: 5000, weekly_rate: 30000, image_url: "https://carsalesbase.com/wp-content/uploads/2021/05/Auto-sales-statistics-China-Toyota_Allion-sedan.jpg")
+Car.create(model: "Toyota Premio", daily_rate: 5000, weekly_rate: 30000, image_url: "https://qph.cf2.quoracdn.net/main-qimg-183015838671743e153d4a2b917453dd-lq")
+Car.create(model: "Toyota Vitz", daily_rate: 5000, weekly_rate: 30000, image_url: "https://image.shutterstock.com/image-photo/tokyo-japan-11-1-2017-260nw-1882834027.jpg")
 
 # Client database
 Client.create(name: "James Dimal")
