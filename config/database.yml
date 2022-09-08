@@ -13,4 +13,9 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: dd16dmp9ph46c2
+  username: xlnpwilzuuumfj
+  host: ec2-107-23-76-12.compute-1.amazonaws.com
+  password: 8acefc3afd75c960a29d28252d1e6bd0ff0ce4c6daa25442c21ace608b4612f7
+
+
