@@ -1,28 +1,28 @@
 puts "🌱 Seeding spices..."
 
 # Seed your database here
-Car.create(brand: "Toyota", model: "VX", registration: "KDG 116A")
-Car.create(brand: "Toyota", model: "VX", registration: "KCX 033Z")
-Car.create(brand: "Toyota", model: "VX", registration: "KDB 111B")
-Car.create(brand: "Toyota", model: "VX", registration: "KDJ 904Z")
-Car.create(brand: "Toyota", model: "Allion", registration: "KDA 632K")
-Car.create(brand: "Toyota", model: "Premio", registration: "KCP 680P")
-Car.create(brand: "Toyota", model: "Vitz", registration: "KDG 643V")
+# Car database
+Car.create(model: "Toyota TX", daily_rate: 10000, weekly_rate: 60000)
+Car.create(model: "Toyota ZX", daily_rate: 10000, weekly_rate: 60000)
+Car.create(model: "Toyota VX", daily_rate: 10000, weekly_rate: 60000)
+Car.create(model: "Toyota VX", daily_rate: 10000, weekly_rate: 60000)
+Car.create(model: "Toyota Allion", daily_rate: 5000, weekly_rate: 30000)
+Car.create(model: "Toyota Premio", daily_rate: 5000, weekly_rate: 30000)
+Car.create(model: "Toyota Vitz", daily_rate: 5000, weekly_rate: 30000)
 
+# Client database
+Client.create(name: "James Dimal")
+Client.create(name: "Amos Kimemiah")
+Client.create(name: "Brian Mwanga")
+Client.create(name: "James Opondo")
+Client.create(name: "Mutinda Joseph")
 
-
-Client.create(name: "James Dimal", car_id:3)
-Client.create(name: "Amos kimemiah", car_id:2)
-Client.create(name: "Brian Mwanga", car_id:6)
-Client.create(name: "James Opondo", car_id:1)
-Client.create(name: "Mutinda Joseph", car_id:7)
-
-
-Lease.create(car_id: 1, client_id: 1, period:"1 Day")
-Lease.create(car_id: 2, client_id: 2, period:"1 week")
-Lease.create(car_id: 3, client_id: 3, period:"3 weeks")
-Lease.create(car_id: 4, client_id: 4, period:"5 days")
-Lease.create(car_id: 5, client_id: 5, period:"1 weeks")
+# Lease database
+Lease.create(car_id: 1, client_id: 1 ,start: 2022-04-01, end: 2022-04-05)
+Lease.create(car_id: 2, client_id: 2 ,start: 2022-04-04, end: 2022-05-05)
+Lease.create(car_id: 3, client_id: 3 ,start: 2022-04-05, end: 2022-04-20)
+Lease.create(car_id: 4, client_id: 4 ,start: 2022-04-20, end: 2022-06-20)
+Lease.create(car_id: 5, client_id: 5 ,start: 2022-04-01, end: 2022-04-05)
 
 
 puts "✅ Done seeding!"

@@ -9,3 +9,24 @@
 # migrations use external dependencies or application code.
 #
 # It's strongly recommended that you check this file into your version control system.
+
+ActiveRecord::Schema.define(version: 2022_09_08_083423) do
+
+  create_table "cars", force: :cascade do |t|
+    t.string "model"
+    t.integer "daily_rate"
+    t.integer "weekly_rate"
+  end
+
+  create_table "clients", force: :cascade do |t|
+    t.string "name"
+  end
+
+  create_table "leases", force: :cascade do |t|
+    t.integer "car_id"
+    t.integer "client_id"
+    t.date "start"
+    t.date "end"
+  end
+
+end
