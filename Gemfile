@@ -3,7 +3,7 @@ source "https://rubygems.org"
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
-
+gem "pg"
 # A fast and simple web server
 # https://github.com/macournoyer/thin
 gem "thin", "~> 1.8"
@@ -52,5 +52,5 @@ group :test do
   gem "rspec-json_expectations", "~> 2.2"
 end
 
-gem "pg"
+
 
