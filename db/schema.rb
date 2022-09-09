@@ -21,13 +21,16 @@ ActiveRecord::Schema.define(version: 2022_09_08_130155) do
 
   create_table "clients", force: :cascade do |t|
     t.string "name"
+    t.integer "contacts"
+    t.string "model"
+    t.string "rate"
   end
 
   create_table "leases", force: :cascade do |t|
     t.integer "car_id"
     t.integer "client_id"
-    t.date "start"
-    t.date "end"
+    t.string "start"
+    t.string "end"
   end
 
 end

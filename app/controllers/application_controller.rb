@@ -42,9 +42,10 @@ class ApplicationController < Sinatra::Base
   #Post request for the car
    post '/cars' do
    send_it = Car.create(
-    car_model:params[:car_model],
-    daily_rate:params[:daily_rate],
-    weekly_rate:params[:weekly_rate]
+    model: params[:model],
+    daily_rate: params[:daily_rate],
+    weekly_rate: params[:weekly_rate],
+    image_url: params[:image_url]
    )
    send_it.to_json
   end
@@ -52,7 +53,10 @@ class ApplicationController < Sinatra::Base
    #Post request for the client
   post '/clients' do
    send_it = Client.create(
-    name:params[:name]
+    name:params[:name],
+    contacts: params[:contacts],
+    model: params[:model],
+    rate: params[:rate]
    )
    send_it.to_json
   end
