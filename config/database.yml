@@ -1,7 +1,5 @@
 default: &default
-  adapter: sqlite3
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
+  adapter: postgresql
 
 development:
   <<: *default
@@ -13,10 +11,9 @@ test:
 
 production:
   <<: *default
-  database: db/production.db
-  Database: dd16dmp9ph46c2
-  username: xlnpwilzuuumfj
-  host: ec2-107-23-76-12.compute-1.amazonaws.com
-  password: 8acefc3afd75c960a29d28252d1e6bd0ff0ce4c6daa25442c21ace608b4612f7
+  database: d2s8fom04ghsnn
+  username: mkqbapfyrcasks
+  host: ec2-44-207-133-100.compute-1.amazonaws.com
+  password: cf65c6031bf67af31f70c87bdd7c42e1030ed19c3121a054ba3cc7bc149eb1ca
 
 
